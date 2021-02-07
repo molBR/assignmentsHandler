@@ -1,7 +1,7 @@
-Must have: docker-compose, docker, node, yarn
+<b>Must have:</b><br> docker-compose, docker, node, yarn
 
-Setup:
-docker-compose up -d
-yarn
+<b>Setup:</b><br>
+docker-compose up -d<br> 
+yarn<br>
 yarn start
 

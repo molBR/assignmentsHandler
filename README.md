@@ -1,2 +1,6 @@
-<h1> </h1>
+Must have: docker-compose, docker, node, yarn
+
+Setup:
+docker-compose up -d
+yarn start
 

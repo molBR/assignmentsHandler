@@ -9,6 +9,17 @@ services:
       - 27017:27017
     volumes:
       - mongodb_data_container:/data/db
-
+    container_name: database
+  node-app:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - "mongodb_container"
+    links:
+      - "mongodb_container"
+    
 volumes:
   mongodb_data_container:

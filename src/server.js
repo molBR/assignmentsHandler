@@ -7,11 +7,12 @@ const start = async () => {
     const server = fastify()
     createDatabaseConfig()
     wrapperController(server);
-    server.listen(8080, async (err,address) => {
+    server.listen(8081, async (err,address) => {
         if(err) {
             console.error(err);
             process.exit(1);
         }
+        console.log("eu apareco??")
         console.log(`SERVER LISTENING AT ${address}`);
         
     });

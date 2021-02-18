@@ -4,6 +4,7 @@ const url = process.env.DATABASE_URL
 const DATABASE_NAME = process.env.DATABASE_NAME
 const COLLECTION_NAME = process.env.COLLECTION_NAME_USERS
 export const createDatabaseConfig = async ()=>{
+    console.log("info sobre url!!", url)
 
     const client = await MongoClient.connect(url)
     const dbo = client.db(DATABASE_NAME);
